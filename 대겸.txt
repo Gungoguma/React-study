@@ -1,0 +1,33 @@
+복잡한거 얘가 알아서 다 만들어줌
+npx create-react-app <Project Name>
+cd <Project Name>
+
+개발 모드로 시작. 소스 코드 바뀌면 브라우저에 자동으로 반영됨
+npm start
+npm run start
+yarn start
+
+React가 결과물을 뽑으면 파일 하나로 나온다
+실제 결과물 뽑기:
+npm run build
+yarn build
+
+키포인트
+index.js
+App.js
+
+함수로 만들어서 함수 컴포넌트
+
+함수를 만들고 함수를 쓸 수 있게 내보냄
+export default <함수 이름>
+
+필요없는 import는 삭제
+근데 나중에 툴이 알아서 삭제해줌
+
+대문자로 시작하는 이름 정하기 방법
+컴포넌트 만들 때 이 방법으로 함
+PascalCase
+
+리액트 개발자 도구
+react developer tools
+이걸로 컴포넌트 구조 어떻게 되있는지 확인 가능
