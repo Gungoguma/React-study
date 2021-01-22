@@ -1,19 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import './App.css';
 
-class App extends Component {
-  state = {
-    count : 0
+const App = () => {
+  const [count, setCount] = useState(0);
+  const [email, setEmail] = useState("");
+  const updateEmail = e => {
+    const {
+      target : { value }
+    } = e;
+    setEmail(value);
   };
-  modify = (n) => {
-    this.setState({
-      count:n
-    });
-  };
-  render() {
-    const { count } = this.state;
-    return <><div>{count}</div><button onClick={() => this.modify(count + 1)}>increment</button></>;
-  }
+  useEffect(() => {
+    document.title = count
+  })
+  return (
+    <>
+    {count}
+    <br></br>
+    <button onClick={() => setCount(count + 1)}>눌러봐</button>
+    <button onClick={() => setCount(count - 1)}>누르지마</button>
+    <input placeholder="Email" value={email} onChange={updateEmail} />
+    </>
+  )
 }
+
 
 export default App;
