@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 const App = () => {
+	const name = '친구';
 	return (
-		<Fragment>
-			<div>따듯하게</div>
-			<div>감싸져 있다.</div>
-		</Fragment>
+		<div>
+			안녕 {name}
+		</div>
 	);
 }
 
