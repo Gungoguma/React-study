@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 const App = () => {
-	const name = '친구';
 	return (
 		<div>
-			안녕 {name}
+			{
+				1 + 1 === 2 ? <div>정답입니다~</div> : <div>틀렸습니다~</div>
+			}
 		</div>
 	);
 }
