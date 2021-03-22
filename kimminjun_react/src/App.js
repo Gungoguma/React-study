@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 const App = () => {
 	return (
-		<div>
+		<Fragment>
 			<div>따듯하게</div>
 			<div>감싸져 있다.</div>
-		</div>
+		</Fragment>
 	);
 }
 
