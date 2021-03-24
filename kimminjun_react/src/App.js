@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 
 const App = () => {
-	const number = 1;
+	const style = {
+		backgroundColor: 'black',
+		padding: '16px',
+		color: 'white',
+		fontSize: '36px'
+	};
 	return (
-		<div>
-			{
-				(function() {
-					if (number === 1) return <div> 1이다 </div>
-					if (number === 2) return <div> 2이다 </div>
-					if (number === 3) return <div> 3이다 </div>
-					return <div>1,2,3 다 아니다..</div>
-				})()
-			}
-		</div>
+		<div style={style}>안녕.</div>
 	);
 }
 
