@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
 const App = () => {
-	const style = {
-		backgroundColor: 'black',
-		padding: '16px',
-		color: 'white',
-		fontSize: '36px'
-	};
 	return (
-		<div style={style}>안녕.</div>
+		<div>
+			{/*주석을 써보자*/}
+			<h1
+			//태그안에서는 이렇게 주석을 쓸 수 있다.
+			>
+				주석쓰는 방법
+			</h1>
+		</div>
 	);
 }
 
