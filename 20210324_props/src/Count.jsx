@@ -1,13 +1,13 @@
-import React, {  } from 'react';
+import React, {} from 'react';
 
-const Count = ({count, setCount, a, b}) => {
+const Count = ({count, setCount, onClickPlus, onClickMinus}) => {
   return (
     <>
       <div>{count}</div>
-      <button onClick={a}>업</button>
-      <button onClick={b}>다운</button>
+      <button onClick = {onClickPlus}>더하기</button>
+      <button onClick = {onClickMinus}>빼기</button>
     </>
   );
 }
 
-export default Count
+export default Count;
